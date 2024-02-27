@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+*{
+    font-family: 'Protest Strike', sans-serif;
+    font-weight: 400;
+    background-color: #f5e6e8;
+    color: #192a51;;
+    font-size: 20px;
+    
+}
+h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 75px;
+    background-image: url(../img/space-5654794_1280.png)
+    
+
+}
+h1 span{
+    font-size: 60%;
+    font-weight: 300;
+
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.navegacion {
+    background-color: #967aa1;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+    
+}
+.navegacion a {
+    background-color: #967aa1;
+    text-decoration: none;
+    color: #d5c6e0;   
+    font-size: 35px;
+
+}
+.icononav{
+    background-color: #967aa1;
+}
+
+p {
+    text-align: center;
+}
+
+.contenido {
+    margin-bottom:60px ;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    text-align:center; 
+}
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio p{
+    text-align: center;
+    font-weight: 400;
+}
+
+.slider-container {
+    display: flex;
+    width: 60%;
+    height: 50vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin: auto;
+  }
+  
+  .slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center
+  }
+
