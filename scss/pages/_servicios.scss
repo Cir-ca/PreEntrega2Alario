@@ -1,0 +1,23 @@
+.servicio {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card {
+    background-image: url(../img/space-5654794_1280.png);
+    background-size: cover;
+  }
+  
+  .card-text {
+    background-color: $color-bg-texto;
+    border-radius: 5px;
+    align-items: center;
+  }
+  @media only screen and (max-width: 480px) {
+    .servicio {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }

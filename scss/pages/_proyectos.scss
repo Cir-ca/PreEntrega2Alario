@@ -1,0 +1,11 @@
+.proyectos {
+    display: flex;
+    gap: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .proyectos {
+      display: grid;
+      gap: 5px;
+    }
+  }

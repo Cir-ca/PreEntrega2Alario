@@ -1,139 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
-*{
-    font-family: 'Protest Strike', sans-serif;
-    font-weight: 400;
-    color: #192a51;;
-    font-size: 20px;
-    display: flexbox;
-    
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
+* {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  color: #192a51;
+  font-size: 16px;
+  display: flexbox;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.editnav{
-    background-image: url(../img/space-5654794_1280.png);
+nav {
+  background-color: #967aa1;
+}
 
+main {
+  min-height: 100vh;
+  background-color: #f5e6e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-body, main{
-    min-height: 100vh;
-    background-image: url(../img/space-5654794_1280.png);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: -80px; 
-    
-}
+
 h1 {
-    font-weight: bold;
-    text-align: center;
-    font-size: 60px;
-
-    
-
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
 }
-h1 span{
-    font-size: 30%;
-    font-weight: 300;
-
-}
-h2{
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
+h1 h1 span {
+  font-size: 30%;
+  font-weight: 300;
 }
 
-.nosotros{
-    width: 100%;
-    margin: 60px;
-    gap: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
 }
 
-.nleft{
-    width: 40%;
-    min-height: 250px;
-    background-image: url(../img/technology-1283624_1280\ \(1\).jpg);
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 60px;
+h3, h5 {
+  background-color: rgba(133, 47, 107, 0.4784313725);
+  border-radius: 5px;
+  text-align: center;
 }
-
-.nright{
-    width: 40%;
-    background-color: rgba(255, 255, 255, 0.459);
-    padding: 20px;
-    margin-bottom: 60px;
-}
-
-.servicio{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-.card{
-    margin:15px;
-}
-@media only screen and (min-width:300px) and (max-width: 480px){
-    .nosotros{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .nleft{
-        width: 100%;
-    }
-
-    .nright{
-        width: 100%;
-    }
-
-    .servicio{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
-
-@media only screen and (min-width:480px) and (max-width: 1023px){
-    .servicio{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
-        gap: 10px;
-    }
-    .card{
-        margin: 5px;
-    }
-}
-
 
 p {
-    text-align: center;
+  text-align: center;
 }
 
+footer {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #d5c6e0;
+  padding: 20px;
+  background-color: #967aa1;
+}
+footer p {
+  font-size: 20px;
+}
+footer .redes i {
+  color: #d5c6e0;
+  font-size: 35px;
+  letter-spacing: 25px;
+}
+footer a {
+  text-decoration: none;
+}
+footer a i:hover {
+  color: #192a51;
+}
 
-footer{
-    height: 100%;
+.nosotros {
+  width: 100%;
+  margin: 60px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.nosotros .nleft {
+  width: 40%;
+  min-height: 300px;
+  background-image: url(../img/technology-1283624_1280\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.nosotros .nright {
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.459);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  .nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .nosotros .nleft {
     width: 100%;
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-    margin-top: auto;
-
+  }
+  .nosotros .nright {
+    width: 100%;
+  }
 }
-footer p{
-    font-size: 20px;
-}
-footer .redes i{
-    color: #967aa1;
-    font-size: 35px;
-    letter-spacing: 25px;    
+.servicio {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
-footer a{
-    text-decoration: none;
+.card {
+  background-image: url(../img/space-5654794_1280.png);
+  background-size: cover;
 }
 
-footer a i:hover{
-    color: #192a51;
+.card-text {
+  background-color: rgba(133, 47, 107, 0.4784313725);
+  border-radius: 5px;
+  align-items: center;
 }
 
+@media only screen and (max-width: 480px) {
+  .servicio {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.proyectos {
+  display: flex;
+  gap: 5px;
+}
+
+@media (max-width: 768px) {
+  .proyectos {
+    display: grid;
+    gap: 5px;
+  }
+}
+.formulario {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #967aa1;
+  margin-bottom: 10px;
+}
+.formulario fieldset {
+  border: none;
+}
+.formulario legend {
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.formulario .campo {
+  margin-bottom: 10px;
+}
+.formulario .campo label {
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
+}
+.formulario .campo textarea {
+  height: 200px;
+}
+.formulario .input-text {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.formulario .boton:hover {
+  cursor: pointer;
+  background-color: #aaa1c8;
+}
+.formulario .enviar .boton {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .formulario {
+    height: 610px;
+    margin-bottom: 10px;
+  }
+  .formulario .contenedor-campos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    column-gap: 10px;
+  }
+  .formulario .campo2,
+  .formulario .campo3,
+  .formulario .boton {
+    grid-column: 1/3;
+  }
+}
+.formulario .mapa {
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */
