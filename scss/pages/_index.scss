@@ -1,28 +1,26 @@
-.nosotros {
-    width: 100%;
+.nosotros {    width: 100%;
     margin: 60px;
     gap: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-.nleft {
-    width: 40%;
-    min-height: 300px;
-    background-image: url(../img/technology-1283624_1280\ \(1\).jpg);
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 30px;
-    border-radius: 5px;
-}
+    justify-content: space-evenly;}
+                    .nleft{
+                        width: 40%;
+                        min-height: 300px;
+                        background-image: url(../img/codigo.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        margin-bottom: 30px;
+                        border-radius: 5px;
+                    }
+                    .nright{
+                        width: 40%;
+                        background-color:$color-bg-contenedor;
+                        padding: 20px;
+                        margin-bottom: 30px;
+                        border-radius: 5px;
+                    }
 
-.nright {
-    width: 40%;
-    background-color:$color-bg-contenedor;
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-}
-}
 @media only screen and (max-width: 480px) {
     .nosotros {
     display: grid;

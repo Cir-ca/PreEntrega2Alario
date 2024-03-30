@@ -80,16 +80,18 @@ footer a i:hover {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.nosotros .nleft {
+
+.nleft {
   width: 40%;
   min-height: 300px;
-  background-image: url(../img/technology-1283624_1280\ \(1\).jpg);
+  background-image: url(../img/codigo.jpg);
   background-size: cover;
   background-position: center;
   margin-bottom: 30px;
   border-radius: 5px;
 }
-.nosotros .nright {
+
+.nright {
   width: 40%;
   background-color: rgba(255, 255, 255, 0.459);
   padding: 20px;
